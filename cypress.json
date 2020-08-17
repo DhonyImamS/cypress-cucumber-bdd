@@ -1,1 +1,6 @@
-{}
+{
+    "baseUrl": "https://demo.midtrans.com/",
+    "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 40000,
+    "trashAssetsBeforeRuns": true
+}
