@@ -1,11 +1,26 @@
 {
-  "name": "cypress-cucumber-bdd",
-  "version": "1.0.0",
-  "description": "This is Cypress with Cucumber Gherkin",
-  "main": "index.js",
-  "scripts": {
-    "test": "test:chrome"
-  },
-  "author": "Dhony Imam Saputra",
-  "license": "ISC"
+    "name": "cypress-cucumber-bdd",
+    "version": "1.0.0",
+    "description": "This is Cypress with Cucumber Gherkin",
+    "main": "index.js",
+    "scripts": {
+        "test": "test:chrome",
+        "cypress": "./node_modules/.bin/cypress",
+        "cypress-tag": "./node_modules/.bin/cypress-tags run -e",
+        "cypress:open": "npm run cypress open",
+        "cypress:test": "npm run cypress run",
+        "cypress:tag": "npm run cypress-tag"
+    },
+    "devDependencies": {
+        "cypress": "^4.12.1"
+    },
+    "dependencies": {
+        "cypress-cucumber-preprocessor": "^2.5.4",
+        "fs": "0.0.1-security"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true
+    },
+    "author": "Dhony Imam Saputra",
+    "license": "ISC"
 }
