@@ -1,0 +1,201 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Payment for Pillow Checkout Transaction with Midtrans",
+    "line": 1,
+    "id": "payment-for-pillow-checkout-transaction-with-midtrans",
+    "tags": [],
+    "uri": "CreditCardPayment.feature",
+    "elements": [
+      {
+        "id": "payment-for-pillow-checkout-transaction-with-midtrans;check-mechanism-payment-transaction-using-valid-credit-card",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Check Mechanism Payment transaction using Valid Credit Card",
+        "tags": [
+          {
+            "name": "@creditcard",
+            "line": 3
+          },
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I Open Home Page website Midtrans",
+            "result": {
+              "status": "passed",
+              "duration": 1062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I do checkout Pillow for my transaction",
+            "result": {
+              "status": "passed",
+              "duration": 1328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I choose Credit Card for payment method",
+            "result": {
+              "status": "passed",
+              "duration": 199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I input my credit card no \"4811 1111 1111 1114\" with cvv \"0222\" and expiredAt \"123\"",
+            "result": {
+              "status": "passed",
+              "duration": 1352000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I click PAY NOW",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I input password for confirm my payment",
+            "result": {
+              "status": "passed",
+              "duration": 5558000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I will see \"successfull\" payment",
+            "result": {
+              "status": "passed",
+              "duration": 655000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "payment-for-pillow-checkout-transaction-with-midtrans;check-mechanism-payment-transaction-using-invalid-credit-card",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Check Mechanism Payment transaction using Invalid Credit Card",
+        "tags": [
+          {
+            "name": "@creditcard",
+            "line": 13
+          },
+          {
+            "name": "@negative",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I Open Home Page website Midtrans",
+            "result": {
+              "status": "passed",
+              "duration": 609000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I do checkout Pillow for my transaction",
+            "result": {
+              "status": "passed",
+              "duration": 1459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I choose Credit Card for payment method",
+            "result": {
+              "status": "passed",
+              "duration": 160000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I input my credit card no \"4911 1111 1111 1113\" with cvv \"0222\" and expiredAt \"123\"",
+            "result": {
+              "status": "passed",
+              "duration": 1384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I click PAY NOW",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I input password for confirm my payment",
+            "result": {
+              "status": "passed",
+              "duration": 5493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I will see \"failed\" payment",
+            "result": {
+              "status": "passed",
+              "duration": 682000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "60"
+      },
+      "device": "Local test machine",
+      "platform": {
+        "name": "mac os x",
+        "version": "10.15.6"
+      }
+    }
+  }
+]

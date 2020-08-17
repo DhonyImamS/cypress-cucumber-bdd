@@ -2,7 +2,10 @@ const report = require('multiple-cucumber-html-reporter');
 
 report.generate({
 	jsonDir: '../report/cucumber-json',
-	reportPath: '../report/html',
+    reportPath: '../report/html',
+    openReportInBrowser: true,
+    saveCollectedJSON: true,
+    disableLog: false,
 	metadata:{
         browser: {
             name: 'chrome',
@@ -15,13 +18,13 @@ report.generate({
         }
     },
     customData: {
-        title: 'Run info',
+        title: 'Report Information',
         data: [
-            {label: 'Project', value: 'Custom project'},
-            {label: 'Release', value: '1.2.3'},
-            {label: 'Cycle', value: 'B11221.34321'},
-            {label: 'Execution Start Time', value: 'Nov 19th 2017, 02:31 PM EST'},
-            {label: 'Execution End Time', value: 'Nov 19th 2017, 02:56 PM EST'}
+            {label: 'Project', value: 'Checkout Transaction Pillow'},
+            {label: 'Release', value: '1.0.0'},
+            {label: 'Cycle', value: '1'},
+            {label: 'Execution Start Time', value: new Date(Date.now()).toLocaleString()},
+            {label: 'Execution End Time', value: new Date(Date.now()).toLocaleString()}
         ]
     }
 });
