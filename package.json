@@ -13,6 +13,7 @@
         "cypress:tag": "npm run cypress-tag"
     },
     "devDependencies": {
+        "cucumber-html-reporter": "^5.2.0",
         "cypress": "^4.12.1",
         "multiple-cucumber-html-reporter": "^1.18.0"
     },
