@@ -2,9 +2,5 @@
     "baseUrl": "https://demo.midtrans.com/",
     "testFiles": "**/*.feature",
     "defaultCommandTimeout": 40000,
-    "trashAssetsBeforeRuns": true,
-    "reporter": "cucumber-html-reporter",
-    "reporterOptions": {
-        "configFile": "config-reporter.json"
-    }
+    "trashAssetsBeforeRuns": true
 }
