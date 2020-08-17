@@ -1,0 +1,11 @@
+{
+  "name": "cypress-cucumber-bdd",
+  "version": "1.0.0",
+  "description": "This is Cypress with Cucumber Gherkin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test:chrome"
+  },
+  "author": "Dhony Imam Saputra",
+  "license": "ISC"
+}
