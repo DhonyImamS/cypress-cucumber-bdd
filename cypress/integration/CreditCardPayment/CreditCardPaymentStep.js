@@ -1,5 +1,6 @@
-import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, And, After } from "cypress-cucumber-preprocessor/steps";
 import MidtransPage from "../../page/midtrans_page";
+import Hooks from "../../hooks/hook";
 
 Given('I Open Home Page website Midtrans', () => {
     MidtransPage.navigatePage('#');
@@ -37,3 +38,7 @@ And(/^I will see "(.*)" payment$/, (state) => {
         MidtransPage.getTextPaymentResult(status).should('have.text', message);
     }
 });
+
+// After(() => {
+//     Hooks.reportFunc();
+// });
