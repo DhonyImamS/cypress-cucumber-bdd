@@ -45,12 +45,11 @@ class MidtransPage {
     }
 
     static getTextPaymentResult(state) {
-        // cy.get('a[href="/cp/promo/campaigns/virtual-assistant"]').should('have.text',textInput);
         let element = 'div.text-failed.text-bold span';
 
         if ( state === 'success' ) {
-            element = 'div.text-success.text-bold'
-        }
+            element = '#application div.final-panel.success > div:nth-child(3)';
+        } 
         
         return cy.get('iframe[id="snap-midtrans"]').iframe().find(element);
     }

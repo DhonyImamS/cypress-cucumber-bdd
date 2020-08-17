@@ -32,7 +32,8 @@ And(/^I will see "(.*)" payment$/, (state) => {
     if ( state === 'successfull' ) {
         status = 'success';
         message = 'Transaction successfull';
+        MidtransPage.getTextPaymentResult(status).should('be.visible');
+    } else {
+        MidtransPage.getTextPaymentResult(status).should('have.text', message);
     }
-
-    MidtransPage.getTextPaymentResult(status).should('have.text', message);
 });
