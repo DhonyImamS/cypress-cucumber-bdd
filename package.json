@@ -12,14 +12,21 @@
         "cypress:tag": "npm run cypress-tag"
     },
     "devDependencies": {
-        "cypress": "^4.12.1"
+        "cypress": "^4.12.1",
+        "multiple-cucumber-html-reporter": "^1.18.0"
     },
     "dependencies": {
         "cypress-cucumber-preprocessor": "^2.5.4",
         "fs": "0.0.1-security"
     },
     "cypress-cucumber-preprocessor": {
-        "nonGlobalStepDefinitions": true
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/report/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
     },
     "author": "Dhony Imam Saputra",
     "license": "ISC"
