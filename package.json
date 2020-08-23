@@ -10,7 +10,8 @@
         "cypress:open": "npm run cypress open",
         "cypress:test-chrome": "npm run cypress run --browser chrome",
         "cypress:test-firefox": "npm run cypress run --browser firefox",
-        "cypress:tag": "npm run cypress-tag"
+        "cypress:tag": "npm run cypress-tag",
+        "generate-report": "node ./reporters/index.js"
     },
     "devDependencies": {
         "cucumber-html-reporter": "^5.2.0",

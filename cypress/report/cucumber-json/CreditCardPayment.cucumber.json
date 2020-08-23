@@ -30,8 +30,8 @@
             "line": 5,
             "name": "I Open Home Page website Midtrans",
             "result": {
-              "status": "skipped",
-              "duration": 99000000
+              "status": "passed",
+              "duration": 1061000000
             }
           },
           {
@@ -40,7 +40,8 @@
             "line": 6,
             "name": "I do checkout Pillow for my transaction",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1601000000
             }
           },
           {
@@ -49,7 +50,8 @@
             "line": 7,
             "name": "I choose Credit Card for payment method",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 190000000
             }
           },
           {
@@ -58,7 +60,8 @@
             "line": 8,
             "name": "I input my credit card no \"4811 1111 1111 1114\" with cvv \"0222\" and expiredAt \"123\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1492000000
             }
           },
           {
@@ -67,7 +70,8 @@
             "line": 9,
             "name": "I click PAY NOW",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 136000000
             }
           },
           {
@@ -76,7 +80,8 @@
             "line": 10,
             "name": "I input password for confirm my payment",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5556000000
             }
           },
           {
@@ -85,7 +90,8 @@
             "line": 11,
             "name": "I will see \"successfull\" payment",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1085000000
             }
           }
         ]
@@ -114,7 +120,7 @@
             "name": "I Open Home Page website Midtrans",
             "result": {
               "status": "passed",
-              "duration": 930000000
+              "duration": 588000000
             }
           },
           {
@@ -124,7 +130,7 @@
             "name": "I do checkout Pillow for my transaction",
             "result": {
               "status": "passed",
-              "duration": 1415000000
+              "duration": 1431000000
             }
           },
           {
@@ -134,7 +140,7 @@
             "name": "I choose Credit Card for payment method",
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 157000000
             }
           },
           {
@@ -144,7 +150,7 @@
             "name": "I input my credit card no \"4911 1111 1111 1113\" with cvv \"0222\" and expiredAt \"123\"",
             "result": {
               "status": "passed",
-              "duration": 1412000000
+              "duration": 1355000000
             }
           },
           {
@@ -154,7 +160,7 @@
             "name": "I click PAY NOW",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 88000000
             }
           },
           {
@@ -164,7 +170,7 @@
             "name": "I input password for confirm my payment",
             "result": {
               "status": "passed",
-              "duration": 5513000000
+              "duration": 5512000000
             }
           },
           {
@@ -174,7 +180,7 @@
             "name": "I will see \"failed\" payment",
             "result": {
               "status": "passed",
-              "duration": 678000000
+              "duration": 594000000
             }
           }
         ]
