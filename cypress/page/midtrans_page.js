@@ -8,7 +8,6 @@ class MidtransPage {
     static doCheckout() {
         cy.get('a[class="btn buy"]').click();
         cy.get('.cart-checkout').click();
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('a.button-main-content').click();
     }
 
     static choosePaymentMethod(option) {
@@ -16,32 +15,31 @@ class MidtransPage {
     }
 
     static setCredentialPayment(cardnumber, cvv, exp) {
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('input[name=cardnumber]').type(cardnumber);
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('div.input-group.col-xs-7').type(cvv);
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('div.input-group.col-xs-5').type(exp);
-
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('#application > div.button-main.show > a').click();
+        cy.get('iframe[id="snap-midtrans"]').iframe().find('.card-number input[type="tel"]').clear();
+        cy.get('iframe[id="snap-midtrans"]').iframe().find('.card-number input[type="tel"]').type(cardnumber);
+        cy.get('iframe[id="snap-midtrans"]').iframe().find('input[id="card-expiry"][type="tel"]').type(cvv);
+        cy.get('iframe[id="snap-midtrans"]').iframe().find('input[id="card-cvv"][type="tel"]').type(exp);
     }
 
     static submitOtpPaymentCode(otp) {
-        cy.wait(5000);
+        cy.wait(3000);
 
         cy.get('iframe[id="snap-midtrans"]')
             .iframe()
-            .find('iframe[src^="https://api.sandbox.veritrans.co.id/v2/token/rba/redirect"]')
+            .find('iframe[src^="https://api.sandbox.midtrans.com/v2/token/rba/redirect"]')
             .iframe().find('input[type="password"]')
             .type(otp); 
 
         cy.get('iframe[id="snap-midtrans"]')
             .iframe()
-            .find('iframe[src^="https://api.sandbox.veritrans.co.id/v2/token/rba/redirect"]')
+            .find('iframe[src^="https://api.sandbox.midtrans.com/v2/token/rba/redirect"]')
             .iframe()
             .find('button[name="ok"]')
             .click();
     }
 
     static clickPayNow() {
-        cy.get('iframe[id="snap-midtrans"]').iframe().find('#application > div.button-main.show > a').click();
+        cy.get('iframe[id="snap-midtrans"]').iframe().find('#application .card-pay-button-part > button').click();
     }
 
     static getTextPaymentResult(state) {
